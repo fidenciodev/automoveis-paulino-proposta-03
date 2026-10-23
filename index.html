@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f3f2ee">
+  <meta name="description" content="Novas histórias começam ao volante. Explore a vitrine de veículos da Paulino Automóveis, em Osasco.">
+<title>Paulino Automóveis | Novas histórias ao volante</title>
+  <link rel="icon" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,500;0,600;0,700;0,800;1,600;1,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preload" href="assets/car-2.jpg" as="image">
+  <link rel="preload" href="assets/car-3.jpg" as="image">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="hero.css">
+  <script src="carousel.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <svg class="svg-defs" aria-hidden="true"><defs>
+    <symbol id="arrow" viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14"/></symbol>
+    <symbol id="arrow-right" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6"/></symbol>
+    <symbol id="pin" viewBox="0 0 24 24"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2"/></symbol>
+    <symbol id="search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></symbol>
+    <symbol id="chat" viewBox="0 0 24 24"><path d="M21 11.5a9 9 0 0 1-9 9 10 10 0 0 1-4-.9L3 21l1.4-4.8A9 9 0 1 1 21 11.5Z"/><path d="M8 10h8m-8 4h5"/></symbol>
+    <symbol id="clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="key" viewBox="0 0 24 24"><circle cx="8" cy="8" r="5"/><path d="m12 12 9 9m-5-5 3-3m-1 5 3-3"/></symbol>
+    <symbol id="swap" viewBox="0 0 24 24"><path d="M3 7h17m-5-5 5 5-5 5M21 17H4m5-5-5 5 5 5"/></symbol>
+    <symbol id="calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 11h18"/></symbol>
+    <symbol id="speed" viewBox="0 0 24 24"><path d="M4 19a10 10 0 1 1 16 0H4Zm8-5 5-6M7 10l-1-1m6-3V4m6 6 1-1"/></symbol>
+  </defs></svg>
+  <a class="skip-link" href="#estoque">Ir para o estoque</a>
+  <div class="topbar"><span><i class="status-dot"></i> NOVAS HISTÓRIAS COMEÇAM AQUI.</span><span>OSASCO, SP <span class="topbar-divider">/</span> SEG–SEX 9H–18H · SÁB 9H–16H</span></div>
+  <header id="site-header" class="site-header">
+    <a class="brand" href="#inicio" aria-label="Paulino Automóveis início"><img src="assets/logo.png" alt="Paulino Automóveis" width="182" height="60"></a>
+    <nav id="primary-nav" aria-label="Menu principal"><a href="#estoque">Nosso estoque <span>↗</span></a><a href="#possibilidades">Venda ou troque</a><a href="#financiamento">Financiamento</a><a href="#loja">A Paulino</a></nav>
+    <button class="button button-small button-dark" data-demo="Seu próximo carro começa com uma conversa">Vamos conversar <svg><use href="#arrow"/></svg></button>
+    <button id="menu-toggle" class="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Abrir menu"><span></span><span></span></button>
+  </header>
+  <main>
+    <section id="inicio" class="opening" aria-labelledby="hero-title">
+      <div id="showcase" class="opening-stage" role="region" aria-roledescription="carrossel" aria-label="Veículos em destaque" tabindex="0">
+        <div class="opening-photo"><img id="showcase-image" src="assets/car-2.jpg" alt="Audi Q5 Sportback na Paulino Automóveis" fetchpriority="high" width="1024" height="768"></div>
+        <div class="opening-gradient"></div><div class="opening-grain"></div>
+        <div class="opening-outline" aria-hidden="true">PAULINO</div>
+        <div class="opening-copy">
+          <p class="opening-eyebrow"><span class="opening-dot"></span> MAIS QUE UM CARRO. UMA CONQUISTA.</p>
+          <h1 id="hero-title">O próximo nível<br>da sua <span>garagem.</span></h1>
+          <p class="opening-intro">Tem um carro que combina com a sua história.<br>O próximo capítulo começa aqui.</p>
+          <a class="opening-button" href="#estoque">Encontre o seu próximo carro <svg><use href="#arrow"/></svg></a>
+          <div class="opening-footnote"><span></span> PAULINO AUTOMÓVEIS <i>/</i> OSASCO, SP</div>
+        </div>
+        <aside class="opening-radar" aria-label="Veículo em destaque"><p class="opening-eyebrow">NO NOSSO RADAR</p><div id="showcase-content" class="opening-featured" aria-live="off" aria-atomic="true"><p id="showcase-brand">AUDI</p><h2 id="showcase-model">Q5 Sportback</h2><p id="showcase-description">Presença que transforma qualquer caminho.</p></div><a href="#estoque" class="opening-stock-link">Conheça o estoque <svg><use href="#arrow"/></svg></a></aside>
+        <div class="opening-controls"><div class="opening-slide-tabs" aria-label="Selecionar veículo em destaque"><button data-showcase-slide="0" class="is-active" aria-pressed="true" aria-label="Mostrar Audi Q5 Sportback">01</button><button data-showcase-slide="1" aria-pressed="false" aria-label="Mostrar Jeep Renegade">02</button><button data-showcase-slide="2" aria-pressed="false" aria-label="Mostrar Hyundai HB20">03</button></div><div class="opening-navigation"><button id="showcase-prev" class="opening-arrow" aria-label="Veículo anterior"><svg class="opening-reverse"><use href="#arrow-right"/></svg></button><button id="showcase-next" class="opening-arrow" aria-label="Próximo veículo"><svg><use href="#arrow-right"/></svg></button><button id="showcase-pause" class="opening-pause" aria-label="Pausar apresentação automática" aria-pressed="false"><span id="playback-icon" aria-hidden="true">Ⅱ</span><span id="playback-label">Pausar</span></button></div></div>
+        <a class="opening-scroll" href="#estoque"><span>CONTINUE EXPLORANDO</span><span>↓</span></a>
+        <div id="showcase-progress" class="opening-progress" aria-hidden="true"><span></span></div>
+      </div>
+    </section>
+
+    <div class="ticker" aria-hidden="true"><div><span>O PRÓXIMO É SEU</span><i>✳</i><span>PAULINO AUTOMÓVEIS</span><i>✳</i><span>O PRÓXIMO É SEU</span><i>✳</i><span>PAULINO AUTOMÓVEIS</span><i>✳</i></div></div>
+
+    <section id="estoque" class="inventory section" aria-labelledby="inventory-title"><div class="section-heading" data-reveal><div><p class="eyebrow"><span class="red-line"></span> O QUE MOVE VOCÊ?</p><h2 id="inventory-title">ENCONTRE SEU<br><em>PRÓXIMO.</em></h2></div><div class="section-heading-side"><svg><use href="#arrow"/></svg><p>Para mudar a rotina.<br>Ou para mudar todos os seus planos.</p></div></div>
+      <div class="inventory-filters" data-reveal><label class="model-search"><svg><use href="#search"/></svg><input id="search-input" type="search" placeholder="Busque por marca ou modelo" aria-label="Buscar por marca ou modelo"></label><label><span>MARCA</span><select id="brand-select"><option value="all">Todas as marcas</option><option>AUDI</option><option>HONDA</option><option>HYUNDAI</option><option>JEEP</option><option>FORD</option></select></label><label><span>INVESTIMENTO</span><select id="price-select"><option value="all">Todos os valores</option><option value="60000">Até R$ 60 mil</option><option value="90000">Até R$ 90 mil</option><option value="300000">Até R$ 300 mil</option></select></label></div>
+      <div class="inventory-toolbar"><div class="category-tabs" aria-label="Categorias de veículos"><button class="is-active" data-category="all" aria-pressed="true">Todos os veículos</button><button data-category="suv" aria-pressed="false">SUVs</button><button data-category="hatch" aria-pressed="false">Hatches</button></div><p id="result-count" aria-live="polite">Carregando vitrine…</p></div>
+      <div id="inventory-grid" class="inventory-grid"><p class="inventory-empty">Carregando os veículos…</p></div><noscript><p>Ative o JavaScript para explorar os veículos e o carrossel automático.</p></noscript>
+      <div class="inventory-footer"><p>Vitrine demonstrativa com fotos e dados do site original.<br>Consulte valores e disponibilidade com a loja.</p><button id="load-more" class="button button-outline">Ver mais possibilidades <span>↓</span></button></div>
+    </section>
+
+    <section id="possibilidades" class="possibilities section" aria-labelledby="possibilities-title"><div class="section-heading" data-reveal><div><p class="eyebrow"><span class="red-line"></span> CADA FASE TEM UM NOVO CAMINHO</p><h2 id="possibilities-title">MUDE OS PLANOS.<br><span class="text-stroke">MUDE DE CARRO.</span></h2></div><p class="section-description">Da primeira conversa à próxima escolha.<br>Encontre a sua possibilidade com a Paulino.</p></div><div class="possibility-grid"><article class="trade-card" data-reveal><img src="assets/car-3.jpg" alt="Jeep Renegade do estoque Paulino" width="1024" height="768" loading="lazy"><div class="trade-card-shade"></div><span class="card-index">01 / VENDA OU TROCA</span><div class="trade-card-content"><svg class="feature-icon"><use href="#swap"/></svg><h3>SEU CARRO ATUAL.<br>SEU PRÓXIMO PASSO.</h3><p>Tem um carro e está pensando em mudar?<br>Converse com a nossa equipe sobre venda e troca.</p><button class="button button-light" data-demo="Vamos avaliar seu carro?">Quero avaliar meu carro <svg><use href="#arrow"/></svg></button></div></article><div class="possibility-stack"><article id="financiamento" class="finance-card" data-reveal><div class="small-card-top"><span class="card-index">02 / FINANCIAMENTO</span><svg class="feature-icon"><use href="#key"/></svg></div><h3>UM NOVO CARRO.<br>UM PLANO PARA VOCÊ.</h3><p>Conheça as possibilidades de financiamento com a equipe Paulino.</p><button class="line-link" data-demo="Converse sobre financiamento">Conhecer as possibilidades <svg><use href="#arrow-right"/></svg></button></article><article class="visit-card" data-reveal><div class="small-card-top"><span class="card-index">03 / VEJA DE PERTO</span><svg class="feature-icon"><use href="#pin"/></svg></div><h3>SEU PRÓXIMO CARRO<br>PODE ESTAR AQUI.</h3><a href="#loja" class="line-link">Venha para a Paulino <svg><use href="#arrow-right"/></svg></a></article></div></div></section>
+
+    <section class="journey section" aria-labelledby="journey-title"><div class="journey-title" data-reveal><p class="eyebrow"><span class="red-line"></span> O CAMINHO ATÉ A CHAVE</p><h2 id="journey-title">MENOS DISTÂNCIA.<br><em>MAIS CONQUISTAS.</em></h2><p>Uma escolha importante merece uma conversa de verdade. Vamos dar esse próximo passo?</p><button class="button button-dark" data-demo="Conte para a gente o que você procura">Fale com a equipe <svg><use href="#arrow"/></svg></button></div><div class="journey-list"><article data-reveal><span class="journey-number">01</span><div><h3>COMECE PELO QUE TE MOVE.</h3><p>Explore os modelos da vitrine e encontre o que combina com o seu momento.</p></div><svg><use href="#arrow"/></svg></article><article data-reveal><span class="journey-number">02</span><div><h3>COLOQUE OS PLANOS NA MESA.</h3><p>Converse sobre o veículo, sua troca e as condições disponíveis.</p></div><svg><use href="#arrow"/></svg></article><article data-reveal><span class="journey-number">03</span><div><h3>CONHEÇA A SUA ESCOLHA.</h3><p>Venha até a loja, veja cada detalhe e sinta se encontrou seu próximo carro.</p></div><svg><use href="#arrow"/></svg></article></div></section>
+
+    <section id="loja" class="location section" aria-labelledby="location-title"><div class="location-photo" data-reveal><img src="assets/car-2.jpg" alt="Showroom da Paulino Automóveis em Osasco" width="1024" height="768" loading="lazy"><div class="location-photo-shade"></div><span class="location-stamp"><svg><use href="#pin"/></svg><span>OSASCO<br><b>SÃO PAULO</b></span></span><p>DO SEU LADO.<br><em>NO SEU CAMINHO.</em></p></div><div class="location-copy" data-reveal><p class="eyebrow"><span class="red-line"></span> O SEU PRÓXIMO DESTINO</p><h2 id="location-title">VEM CONHECER<br><em>A PAULINO.</em></h2><p>Os detalhes fazem a diferença.<br>Venha ver o seu próximo carro de perto.</p><div class="contact-facts"><div><svg><use href="#pin"/></svg><p><span>ONDE ESTAMOS</span>Av. Diogo Antônio Feijó, 269<br>KM 18 · Osasco, SP</p></div><div><svg><use href="#clock"/></svg><p><span>QUANDO NOS ENCONTRAR</span>Segunda a sexta, 9h às 18h<br>Sábado, 9h às 16h</p></div></div><button class="button button-red" data-demo="Vamos combinar sua visita?">Vamos conversar <svg><use href="#chat"/></svg></button><span class="contact-phone">(11) 96196-8495</span></div></section>
+  </main>
+  <footer class="footer"><div class="footer-heading"><p>PRONTO PARA A PRÓXIMA?</p><button data-demo="Seu próximo capítulo começa aqui" aria-label="Converse com a Paulino"><span>VAMOS DE <em>PAULINO?</em></span><svg><use href="#arrow"/></svg></button></div><div class="footer-bottom"><a class="brand" href="#inicio" aria-label="Paulino Automóveis início"><img src="assets/logo.png" alt="Paulino Automóveis" width="182" height="60"></a><nav aria-label="Menu do rodapé"><a href="#estoque">Nosso estoque</a><a href="#possibilidades">Venda ou troque</a><a href="#loja">Nossa loja</a></nav><a href="#inicio" class="back-top">Voltar ao início ↑</a></div><div class="footer-notes"><span>Paulino Automóveis · Osasco, SP</span><span>Proposta 03 · Front-end demonstrativo</span></div></footer>
+  <button class="floating-contact" data-demo="Fale com a Paulino" aria-label="Fale com a Paulino"><svg><use href="#chat"/></svg><span>Vamos conversar</span></button>
+  <dialog id="vehicle-dialog" class="vehicle-dialog" aria-label="Detalhes do veículo"><button class="dialog-close" data-close-dialog aria-label="Fechar detalhes">×</button><div id="vehicle-detail"></div></dialog>
+  <dialog id="contact-dialog" class="contact-dialog" aria-labelledby="contact-title"><button class="dialog-close" data-close-dialog aria-label="Fechar contato">×</button><p class="eyebrow"><span class="red-line"></span> PAULINO AUTOMÓVEIS</p><h2 id="contact-title">VAMOS CONVERSAR.</h2><p>O seu próximo capítulo pode começar com uma boa conversa.</p><p class="dialog-phone">(11) 96196-8495</p><p>Av. Diogo Antônio Feijó, 269<br>KM 18 · Osasco, SP</p><div class="demo-note">Prévia de design. Atendimento e formulários serão conectados na implementação final.</div><button class="button button-dark" data-close-dialog>Continuar explorando <svg><use href="#arrow"/></svg></button></dialog>
+</body>
+</html>
