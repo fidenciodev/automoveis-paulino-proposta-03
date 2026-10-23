@@ -1,5 +1,7 @@
 # Paulino Automóveis — Proposta 03
 
+**[Visualizar a proposta online](https://fidenciodev.github.io/automoveis-paulino-proposta-03/)**
+
 Proposta de apresentação do site da Paulino Automóveis, feita com HTML, CSS e JavaScript. Inclui abertura visual da proposta 02, carrossel automático a cada 6 segundos, layout responsivo, filtros de veículos e detalhes demonstrativos. Os textos de descrição e apoio foram ampliados para melhorar a leitura.
 
 ## Como visualizar
